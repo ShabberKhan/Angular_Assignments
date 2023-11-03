@@ -1,0 +1,65 @@
+<!-- Excercise_10 Styling the Fields -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Style.css">
+    <title>Valid or Invalid</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <fieldset id="validation">
+            <legend>Personal Details</legend>
+            <ol>
+                <br>
+                <li>
+                    <label for="fname">First Name</label>
+                    <input type="text" placeholder="Enter Your First Name" name="fname" id="fname" autofocus required> 
+                </li>
+                <br><br>
+
+                <br>
+                <li>
+                    <label for="lname">Last Name</label>
+                    <input type="text" placeholder="Enter Your Last Name" name="lname" id="lname" autofocus required>
+                </li>
+                <br><br>
+
+                <br>
+                <li>
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="Enter a valid Email" id="email" name="email" autofocus required>
+                </li>
+                <br><br>
+
+                <br>
+                <li>
+                    <label for="password">Password</label>
+                    <input autofocus required type="password" id="password" name="password" autocomplete="off"
+                        placeholder="8-12 characters" pattern="^(?=.{8,})(?=.[a-z])(?=.[A-Z])(?=.*[\d])(?=.*[\W]).*$" title="Password must be 8 or more characters
+                                    with at least one number, an uppercase letter, and one special character">
+                </li>
+                <br><br>
+
+                <br>
+                <li>
+                    <label for="cnfpsd">Confirm Password</label>
+                    <input autofocus required type="password" id="cnfpsd" name="cnfpsd" autocomplete="off"
+                        placeholder="Confirm Password" pattern="^(?=.{8,})(?=.[a-z])(?=.[A-Z])(?=.*[\d])(?=.*[\W]).*$" title="Password must be 8 or more characters
+                                    with at least one number, an uppercase letter, and one special character">
+                </li>
+                <br><br>
+
+                <button>
+                    Submit
+                </button>
+
+
+                
+            </ol>
+        </fieldset>
+    </form>
+</body>
+</html>

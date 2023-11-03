@@ -1,0 +1,33 @@
+<!-- Excercise_9 Validation with Regular Expressions -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Style.css">
+    <title>Validation</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <fieldset>
+            <br>
+                <label for="password">Password</label>
+                <input autofocus required type="password" id="password" name="password" autocomplete="off"
+                 placeholder="8-12 characters"
+                    pattern="^(?=.{8,})(?=.[a-z])(?=.[A-Z])(?=.*[\d])(?=.*[\W]).*$" title="Password must be 8 or more characters
+                    with at least one number, an uppercase letter, and one special character">
+            <br><br>
+            
+            <br>
+                <label for="cnfpsd">Confirm Password</label>
+                <input autofocus required type="password" id="cnfpsd" name="cnfpsd" autocomplete="off" placeholder="Confirm Password"
+                    pattern="^(?=.{8,})(?=.[a-z])(?=.[A-Z])(?=.*[\d])(?=.*[\W]).*$" title="Password must be 8 or more characters
+                    with at least one number, an uppercase letter, and one special character">
+            <br><br>
+
+            <button>Sign Up</button>
+        </fieldset>
+    </form>
+</body>
+</html>

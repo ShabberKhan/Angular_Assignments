@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url("/Users/admin/Downloads/incredibly-beautiful-sunset-sun-lake-sunrise-landscape-panorama-nature-sky-amazing-colorful-clouds-fantasy-design-115177001.webp");
+     background-size: 2000px;
+}
+div.main{
+    
+        width: 400px;
+        margin: 100px;
+        
+}
